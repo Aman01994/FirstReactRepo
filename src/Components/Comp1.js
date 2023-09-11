@@ -1,16 +1,11 @@
-import React, { Component } from 'react'
+// import Area
 
-export class Comp1 extends Component{
-    // 1. Properties
-
-
-    // 2. Constructor 
-
-
-    // 3. Methods
-    render(){
-        
-    } 
+// Function Defination Area 
+function Comp1(){
+    return <>
+        <h1>Hello World</h1>
+    </>
 }
 
+// Export Area 
 export default Comp1

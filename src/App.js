@@ -1,11 +1,11 @@
-
+import Comp1 from "./Components/Comp1";
 
 function App() {
   return (
-    <div>
-     <h2>App Component</h2>
-    </div>
-  );
+    <>
+    <Comp1/>
+    </>  
+);
 }
 
 export default App;
