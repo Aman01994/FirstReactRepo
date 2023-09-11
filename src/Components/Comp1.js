@@ -1,9 +1,11 @@
 // import Area
 
 // Function Defination Area 
-function Comp1(){
+function Comp1(props){
+    let name = "Aman" //Local Variable
+    //{} Expression Evaluator 
     return <>
-        <h1>Hello World</h1>
+        <h1>Hello {props.firstName} {props.lastName},  How are you</h1>
     </>
 }
 
