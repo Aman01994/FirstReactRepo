@@ -7,7 +7,10 @@ export class Comp1 extends Component{
     // 2. Constructor 
 
 
-    // 3. Methods 
+    // 3. Methods
+    render(){
+        
+    } 
 }
 
 export default Comp1
