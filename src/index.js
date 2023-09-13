@@ -2,35 +2,35 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom/client';
 
 
-// Funtion Component 
+// Class Componenets 
+
+class B extends Component{
+  // properties
+  name = 'Amandeep'
+  
+  //Constructure
+  
+
+
+  //Methods
+  render(){
+    return <h1>Hello my name is {this.name} {this.props.surname}</h1>
+  }
+}
+
+// Function Componenets 
+
 function A(props){
-  let name = "Jatin"
-  return<>
-  <h1>{name}, {props.surname}</h1>;
-  <h2><B surname='kohli'/></h2>
+  let firstName = "Surjit"
+  
+  return <>
+  <h1>hi my name is {firstName} {props.children} </h1>
   </>
 }
 
-// Class Component
-// class child extends parent {}  
-class B extends Component{
-  // Properties 
-  name = "MANDEEP"
 
-  // Constructor 
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
-
-  // Method 
-  render(){
-    return (
-      <span>  {this.name}, {this.props.surname}</span>
-    )
-  
-  }
-}
-let surnameA = 'DEEP Ssingh'
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(<A surname={surnameA}/>);
+root.render( <><B surname='Kohli'/> <A>Kohli</A> </>);
 
 
