@@ -34,6 +34,7 @@ class B extends Component{
   
 //   return <>
 //   <h1>hi my name is {props.firstNames} {props.lastName} </h1>
+     <h1>hello this is Amandeep Singh</h1>
 
 //   </>
 // }
